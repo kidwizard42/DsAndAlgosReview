@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './array.component.html',
   styleUrls: ['./array.component.scss'],
 })
-export class ArrayComponent {}
+export class ArrayComponent {
+  search() {
+    console.log();
+  }
+}
