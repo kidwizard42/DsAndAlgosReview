@@ -21,11 +21,10 @@ var generate = function (numRows) {
         b++;
       }
 
-      temp.unshift(firstLast);
+      temp.unshift(firstLast); // to save myself from unshifting I could start adding nums at index one. then add the 1 to index 0;
       temp.push(firstLast);
       arr = temp;
       answer.push(temp);
-      console.log(arr);
     }
     return answer;
   } else {
