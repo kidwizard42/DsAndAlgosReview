@@ -13,28 +13,19 @@
  * @return {ListNode}
  */
 var deleteDuplicates = function (head) {
-  // var for tracking last node
+  // curr node to move across SLL
+  // compare curr to next.
+  // if equal move the curr.next one over curr.next = curr.next.next
+  // note:DON'T move  curr to next node until cur and cur.next are not equal.
+  // ELSE: curr = curr.next
 
-  // iterate over sll
-  // if they are equal remove the current. if not do nothing
+  let curr = head;
 
-  // update node
-
-  console.log("head");
-  console.log(head.next);
-  // console.log(head.length)
-  // let lastNode = head
-  // let i = head
-  let a = head;
-  let b = head.next;
-
-  while (b !== undefined) {
-    if (a?.val === b?.val) {
-      a = b;
-      b = b?.next;
+  while (curr) {
+    if (curr.val === curr?.next?.val) {
+      curr.next = curr?.next?.next;
     } else {
-      b = b?.next;
-      a = a?.next;
+      curr = curr?.next;
     }
   }
 
