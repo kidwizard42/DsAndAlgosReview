@@ -1,7 +1,7 @@
 // link to problem: https://leetcode.com/problems/valid-parentheses/description/
 // my solution is very slow and takes a ton of memory. lots of trimming can be done.
 
-// Notes: solution need a stack. I did well to think of different ways to solve
+// Notes: solution need a stack. I did well to think of different ways to solve.
 //     like 2 pointers and such but need to try and remember if a DS could work as well.
 var isValid = function (s) {
   const obj = {
