@@ -60,3 +60,21 @@ var deleteDuplicates = function (head) {
 //             }
 //         }
 //         return head;
+
+// A more elegant solution in C#
+
+// public ListNode DeleteDuplicates(ListNode h) {
+//   ListNode n = h;
+
+//   while(n is not null)
+//   {
+//       if(n.val == n?.next?.val)
+//       {
+//           n.next = n?.next?.next;
+//       }else
+//       {
+//           n = n?.next;
+//       }
+//   }
+// return h;
+// }
