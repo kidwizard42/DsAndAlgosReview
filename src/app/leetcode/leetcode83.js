@@ -31,3 +31,32 @@ var deleteDuplicates = function (head) {
 
   return head;
 };
+
+//  C# attempt without remembering the simple solution. happy it worked but I should have considered null being passed in.
+// if(head is null) return head;
+
+//         ListNode node = head;
+//         while(node.next is not null){
+
+//             if(node.val != node.next.val)
+//             {
+//                 node = node.next;
+//             }
+//             else if(node.val == node.next.val && node.next.next is not null)
+//             {
+//                 while(node.val == node.next.val && node.next.next is not null)
+//                 {
+//                     node.next = node.next.next;
+//                 }
+//                 if(node.val == node.next.val && node.next.next is null){
+//                     node.next = null;
+//                     continue;
+//                 }
+
+//                 node = node.next;
+//             } else if (node.val == node.next.val && node.next.next is null)
+//             {
+//                 node.next = null;
+//             }
+//         }
+//         return head;
