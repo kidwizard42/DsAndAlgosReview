@@ -35,3 +35,49 @@ var isValid = function (s) {
 
   return true;
 };
+
+// C# solution done . very slow  and bad space complexity :/
+
+// public class Solution {
+//   public bool IsValid(string s) {
+//       Dictionary<char,char> obj = new();
+
+//       obj[')'] = '(';
+//       obj['}'] = '{';
+//       obj[']'] = '[';
+
+//       Stack<char> stack = new();
+
+//       if(s.Length %2 !=0) return false;
+
+//       if(obj.ContainsKey(s[0])) return false;
+
+//       if(!obj.ContainsKey(s[s.Length-1])) return false;
+
+//       for(int i =0; i<s.Length; i++){
+//           //if s[i] not in obj add it to the stack.
+
+//           if(!obj.ContainsKey(s[i]))
+//           {
+//               stack.Push(s[i]);
+//           } else
+//           {
+//                if (stack.Count == 0) return false;
+
+//               if(obj[s[i]] != stack.Peek())
+//               {
+//                   return false;
+//               }
+//               else if (stack.Count > 0){
+
+//                   stack.Pop();
+//               }
+//           }
+
+//       }
+
+//       if(stack.Count() >0 ) return false;
+//       return true;
+
+//   }
+// }
