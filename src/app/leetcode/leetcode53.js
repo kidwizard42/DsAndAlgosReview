@@ -37,3 +37,34 @@ var maxSubArray = function (nums) {
 
   return max;
 };
+
+// c# solution
+
+// public class Solution {
+//   public int MaxSubArray(int[] nums) {
+//       // pointer sub array
+
+//       int sub = nums[0];
+//       int max = nums[0];
+
+//       // loop
+//       for (int i = 1; i<nums.Length; i++)
+//       {
+//           if(sub < 0 && sub < nums[i])
+//           {
+//               sub = nums[i];
+//           }else
+//           {
+//               sub += nums[i];
+//           }
+//           max = Math.Max(max, sub);
+//       }
+
+//       return max;
+//       // if sub array is negative and smaller than nums[i]
+//               // pointer sub array = nums[i]
+//       // else  pointer sub array is = sub array plus nums[i]
+
+//       // check if I need to update maximum int
+//   }
+// }
